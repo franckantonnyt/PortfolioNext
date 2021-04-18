@@ -1,10 +1,8 @@
-import styled from 'styled-components'
+import { useState } from 'react';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import { Title } from '../styles/homeStyle';
 
 export default function Home() {
-  return <Title>My page</Title>
+  const [show, setShow] = useState(false);
+  return <Title>{show ? 'show page' : 'not page'}</Title>;
 }
