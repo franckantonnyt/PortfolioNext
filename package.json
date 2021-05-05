@@ -4,14 +4,14 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
+    "react-lottie": "^1.2.3",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
